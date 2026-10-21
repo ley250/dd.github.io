@@ -162,30 +162,30 @@ export default function App() {
           <button
             className="hud-btn active"
             id="btn-cam-player"
-            title="Player Camera (Click again to flip White / Black view)"
+            title="Player View (Click again to flip White / Black view)"
           >
-            Player Cam
+            Player View
           </button>
           <button
             className="hud-btn"
             id="btn-cam-top"
             title="Overhead Board View (Click again to flip White / Black orientation)"
           >
-            Overhead
+            Top View
           </button>
           <button
             className="hud-btn"
             id="btn-cam-side"
             title="Side Profile View (Click again to switch East / West side)"
           >
-            Side
+            Side View
           </button>
           <button
             className="hud-btn"
             id="btn-cam-wide"
-            title="Wide Cathedral View (Click again to switch North Rose / South Narthex)"
+            title="Wide Overview View"
           >
-            Cathedral
+            Overview
           </button>
 
           <div className="hud-divider" aria-hidden="true"></div>
@@ -201,16 +201,16 @@ export default function App() {
           </button>
 
           <div className="mobile-sheet-hint">
-            <strong>Touch:</strong> Tap Piece to Move &nbsp;•&nbsp; 1-Finger Drag: Orbit &nbsp;•&nbsp; 2-Finger Drag: Pan &nbsp;•&nbsp; Pinch: Zoom
+            <strong>Touch:</strong> Tap Piece to Select &nbsp;•&nbsp; Tap Highlighted Dot to Move &nbsp;•&nbsp; Tap View to Rotate
           </div>
         </div>
       </div>
 
       <div id="hud-bottom">
         <div className="hint-pill" id="controls-hint">
-          <strong>Controls:</strong> Click Piece to Move &nbsp;•&nbsp; Left-Drag: Orbit &nbsp;•&nbsp; Right-Drag: Pan &nbsp;•&nbsp; Scroll: Zoom &nbsp;•&nbsp; WASD + R/F: Fly Cam &nbsp;•&nbsp; H: Hide UI
+          <strong>Controls:</strong> Click Piece to Select &nbsp;•&nbsp; Click Target Dot to Move &nbsp;•&nbsp; View Buttons to Rotate &nbsp;•&nbsp; H: Hide UI
         </div>
-        <div className="captured-pill" id="captured-tray"></div>
+        <div className="captured-tray captured-pill" id="captured-tray"></div>
       </div>
 
       <div id="checkmate-overlay" role="status" aria-live="polite">
